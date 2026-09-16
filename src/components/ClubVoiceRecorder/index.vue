@@ -9,7 +9,7 @@
 </template>
 <script setup>
 import { ref,computed,onBeforeUnmount } from 'vue'
-import { startBrowserVoice,voiceError } from '../../../../../三角洲俱乐部/utils/browser-voice.mjs'
+import { startBrowserVoice,voiceError } from '@/utils/browser-voice.mjs'
 import { uploadClubVoice } from '@/api/club'
 const props=defineProps({modelValue:{type:String,default:''}}), emit=defineEmits(['update:modelValue','duration','busy'])
 const busy=ref(false),recording=ref(false),elapsed=ref(0),error=ref('')
