@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "vite",
     "check:voice": "node --test scripts/test-browser-voice.mjs",
+    "check:build-config": "node --test scripts/test-build-config.mjs",
     "build:prod": "vite build",
     "build:stage": "vite build --mode staging",
     "preview": "vite preview",
