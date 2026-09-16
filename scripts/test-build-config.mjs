@@ -13,4 +13,3 @@ test('Vite uses a canonical root and local aliases, including Windows junction p
   assert.equal(loaded.config.resolve.alias['@'], path.join(root,'src'))
   assert.equal(loaded.config.resolve.alias['~'], root)
 })
-
